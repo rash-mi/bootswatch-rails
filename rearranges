@@ -5,7 +5,7 @@
 body = if ARGV[0]
   File.read(ARGV[0])
 else
-  Dir['vendor/assets/stylesheets/bootswatch/*/_variables.scss'].each do |path|
+  Dir['vendor/assets/stylesheets/bootswatch3/*/_variables.scss'].each do |path|
     puts "#{path.split('/')[-2]}:"
     puts `./#{__FILE__} #{path}`
     puts "\n"

@@ -2,6 +2,8 @@
 
 TODO: Automate these
 
+Note: For bootswatch3, only needed to run #1 and 2 below.
+
 1. Update bootswatch submodule
 2. Run rake convert
 3. Run ./rearranges and fix variable declaration orders

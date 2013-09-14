@@ -1,3 +1,10 @@
+## 0.6.0 (2013-09-14)
+
+* First pass to update all themes to bootswatch version 3.0
+* Included variables.less for default theme
+* Removed spruce and superhero
+* Updated Rakefile to point to bootswatch3 and CONVERSION.md for bootswatch3
+
 ## 0.5.0 (2013-05-21)
 
 * Update all themes to current bootswatch versions (2.3.2)

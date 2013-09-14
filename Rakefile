@@ -1,26 +1,26 @@
 #!/usr/bin/env rake
 require "bundler/gem_tasks"
 
+#Added 'default' theme for bootswatch3, and, removed spruce and spacehero
 THEMES = %w(
   amelia
   cerulean
   cosmo
   cyborg
+  default
   flatly
   journal
   readable
   simplex
   slate
   spacelab
-  spruce
-  superhero
   united
 ).freeze
 
-
-LESS_FILES = FileList["bootswatch/{#{THEMES.join(',')}}/*.less"]
+#Update src and dest to bootswatch3
+LESS_FILES = FileList["bootswatch3/{#{THEMES.join(',')}}/*.less"]
 SCSS_FILES = LESS_FILES.pathmap(
-  'vendor/assets/stylesheets/bootswatch/%-1d/_%n.scss'
+  'vendor/assets/stylesheets/bootswatch3/%-1d/_%n.scss'
 )
 
 SCSS_FILES.zip(LESS_FILES).each do |target, source|
